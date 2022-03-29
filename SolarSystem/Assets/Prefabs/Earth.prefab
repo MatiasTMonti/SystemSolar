@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4455196404132703562}
   - component: {fileID: 4455196404132703557}
   - component: {fileID: 4455196404132703556}
+  - component: {fileID: 1602869700}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4455196404132703559}
-  m_LocalRotation: {x: 0.6087614, y: -0, z: -0, w: -0.7933534}
+  m_LocalRotation: {x: 0.60876125, y: -0, z: -0, w: -0.7933535}
   m_LocalPosition: {x: 2.75, y: 1.4744451, z: 0.19411433}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children:
@@ -96,6 +97,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1602869700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4455196404132703559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a34f7cc6ec39e4441bf44ea81f8e9c9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 5
+  pivotObj: {fileID: 0}
 --- !u!1 &4455196404390385168
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,6 +123,7 @@ GameObject:
   - component: {fileID: 4455196404390385175}
   - component: {fileID: 4455196404390385174}
   - component: {fileID: 4455196404390385169}
+  - component: {fileID: 5880195578395293119}
   m_Layer: 0
   m_Name: Clouds
   m_TagString: Untagged
@@ -191,3 +207,16 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5880195578395293119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4455196404390385168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2806368093d5c0d48b3a84e4f3e2969a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 3

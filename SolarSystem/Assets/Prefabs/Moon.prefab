@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6643849514930792771}
   - component: {fileID: 6643849514930792768}
   - component: {fileID: 6643849514930792769}
+  - component: {fileID: 437244482}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6643849514930792774}
-  m_LocalRotation: {x: 0.6087614, y: -0, z: -0, w: -0.7933534}
+  m_LocalRotation: {x: 0.60876125, y: -0, z: -0, w: -0.7933535}
   m_LocalPosition: {x: 4.25, y: 1.4744451, z: 0.19411433}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
@@ -95,3 +96,17 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &437244482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6643849514930792774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a34f7cc6ec39e4441bf44ea81f8e9c9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 200
+  pivotObj: {fileID: 0}

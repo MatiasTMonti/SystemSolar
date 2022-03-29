@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1889860471345630871}
   - component: {fileID: 1889860471345630868}
   - component: {fileID: 1889860471345630869}
+  - component: {fileID: 6446188289464467377}
+  - component: {fileID: 2069902906}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Untagged
@@ -26,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889860471345630858}
-  m_LocalRotation: {x: 0.6087614, y: -0, z: -0, w: -0.7933534}
+  m_LocalRotation: {x: 0.60876125, y: -0, z: -0, w: -0.7933535}
   m_LocalPosition: {x: 9, y: 1.4744451, z: 0.19411433}
   m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children: []
@@ -95,3 +97,30 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6446188289464467377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889860471345630858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a34f7cc6ec39e4441bf44ea81f8e9c9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 7
+  pivotObj: {fileID: 2970244439600645091, guid: 4b52dada9ac86584e8d6653be32ac7dd, type: 3}
+--- !u!114 &2069902906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889860471345630858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2806368093d5c0d48b3a84e4f3e2969a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 3

@@ -567,6 +567,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1039984276}
     m_Modifications:
+    - target: {fileID: 11400004, guid: a93c012dd9ef6454fa7d140e976926f7, type: 3}
+      propertyPath: m_Text
+      value: Solar System
+      objectReference: {fileID: 0}
     - target: {fileID: 22400002, guid: a93c012dd9ef6454fa7d140e976926f7, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
