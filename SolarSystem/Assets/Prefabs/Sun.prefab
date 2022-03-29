@@ -104,7 +104,6 @@ GameObject:
   - component: {fileID: 2970244439600645091}
   - component: {fileID: 2970244439600645090}
   - component: {fileID: 2970244439600645093}
-  - component: {fileID: 2970244439600645092}
   - component: {fileID: 1685083206}
   m_Layer: 0
   m_Name: Sun
@@ -177,19 +176,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &2970244439600645092
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2970244439600645095}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1685083206
 MonoBehaviour:
   m_ObjectHideFlags: 0

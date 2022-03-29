@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Camera : MonoBehaviour
@@ -16,6 +14,26 @@ public class Camera : MonoBehaviour
     [SerializeField] private GameObject saturnCamera;
     [SerializeField] private GameObject UranusCamera;
     [SerializeField] private GameObject NeptuneCamera;
+
+    [SerializeField] private GameObject earthLight;
+
+    [SerializeField] private Transform mercury;
+    [SerializeField] private Transform venus;
+    [SerializeField] private Transform earth;
+    [SerializeField] private Transform mars;
+    [SerializeField] private Transform jupiter;
+    [SerializeField] private Transform saturn;
+    [SerializeField] private Transform uranus;
+    [SerializeField] private Transform neptune;
+
+    [SerializeField] private Transform mercuryCameraTransform;
+    [SerializeField] private Transform venusCameraTransform;
+    [SerializeField] private Transform earthCameraTransform;
+    [SerializeField] private Transform marsCameraTransform;
+    [SerializeField] private Transform jupiterCameraTransform;
+    [SerializeField] private Transform saturnCameraTransform;
+    [SerializeField] private Transform uranusCameraTransform;
+    [SerializeField] private Transform NeptuneCameraTransform;
 
     // Update is called once per frame
     void Update()
@@ -39,6 +57,15 @@ public class Camera : MonoBehaviour
             Debug.Log(num);
         }
 
+        mercuryCameraTransform.position = mercury.position + new Vector3(0, 0, -2);
+        venusCameraTransform.position = venus.position + new Vector3(0, 0, -2);
+        earthCameraTransform.position = earth.position + new Vector3(0, 0, -2);
+        marsCameraTransform.position = mars.position + new Vector3(0, 0, -2);
+        jupiterCameraTransform.position = jupiter.position + new Vector3(0, 0, -2);
+        saturnCameraTransform.position = saturn.position + new Vector3(0, 0, -2);
+        uranusCameraTransform.position = uranus.position + new Vector3(0, 0, -2);
+        NeptuneCameraTransform.position = neptune.position + new Vector3(0, 0, -2);
+
         switch (num)
         {
             case 0:
@@ -52,6 +79,8 @@ public class Camera : MonoBehaviour
                 saturnCamera.SetActive(false);
                 UranusCamera.SetActive(false);
                 NeptuneCamera.SetActive(false);
+
+                earthLight.SetActive(false);
                 break;
             case 1:
                 worldCamera.SetActive(false);
@@ -64,6 +93,8 @@ public class Camera : MonoBehaviour
                 saturnCamera.SetActive(false);
                 UranusCamera.SetActive(false);
                 NeptuneCamera.SetActive(false);
+
+                earthLight.SetActive(false);
                 break;
             case 2:
                 worldCamera.SetActive(false);
@@ -76,6 +107,8 @@ public class Camera : MonoBehaviour
                 saturnCamera.SetActive(false);
                 UranusCamera.SetActive(false);
                 NeptuneCamera.SetActive(false);
+
+                earthLight.SetActive(false);
                 break;
             case 3:
                 worldCamera.SetActive(false);
@@ -88,6 +121,8 @@ public class Camera : MonoBehaviour
                 saturnCamera.SetActive(false);
                 UranusCamera.SetActive(false);
                 NeptuneCamera.SetActive(false);
+
+                earthLight.SetActive(false);
                 break;
             case 4:
                 worldCamera.SetActive(false);
@@ -100,6 +135,8 @@ public class Camera : MonoBehaviour
                 saturnCamera.SetActive(false);
                 UranusCamera.SetActive(false);
                 NeptuneCamera.SetActive(false);
+
+                earthLight.SetActive(true);
                 break;
             case 5:
                 worldCamera.SetActive(false);
@@ -112,6 +149,8 @@ public class Camera : MonoBehaviour
                 saturnCamera.SetActive(false);
                 UranusCamera.SetActive(false);
                 NeptuneCamera.SetActive(false);
+
+                earthLight.SetActive(false);
                 break;
             case 6:
                 worldCamera.SetActive(false);
@@ -124,6 +163,8 @@ public class Camera : MonoBehaviour
                 saturnCamera.SetActive(false);
                 UranusCamera.SetActive(false);
                 NeptuneCamera.SetActive(false);
+
+                earthLight.SetActive(false);
                 break;
             case 7:
                 worldCamera.SetActive(false);
@@ -136,6 +177,8 @@ public class Camera : MonoBehaviour
                 saturnCamera.SetActive(true);
                 UranusCamera.SetActive(false);
                 NeptuneCamera.SetActive(false);
+
+                earthLight.SetActive(false);
                 break;
             case 8:
                 worldCamera.SetActive(false);
@@ -148,6 +191,8 @@ public class Camera : MonoBehaviour
                 saturnCamera.SetActive(false);
                 UranusCamera.SetActive(true);
                 NeptuneCamera.SetActive(false);
+
+                earthLight.SetActive(false);
                 break;
             case 9:
                 worldCamera.SetActive(false);
@@ -160,6 +205,8 @@ public class Camera : MonoBehaviour
                 saturnCamera.SetActive(false);
                 UranusCamera.SetActive(false);
                 NeptuneCamera.SetActive(true);
+
+                earthLight.SetActive(false);
                 break;
             default:
                 break;

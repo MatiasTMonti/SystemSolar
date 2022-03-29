@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1182558302528121384}
   - component: {fileID: 1182558302528121385}
   - component: {fileID: 1182558302528121386}
-  - component: {fileID: 1182558302528121387}
   m_Layer: 0
   m_Name: SaturnRing
   m_TagString: Untagged
@@ -82,20 +81,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &1182558302528121387
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1182558302528121388}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &1182558303075010873
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,7 +92,6 @@ GameObject:
   - component: {fileID: 1182558303075010869}
   - component: {fileID: 1182558303075010870}
   - component: {fileID: 1182558303075010871}
-  - component: {fileID: 1182558303075010872}
   - component: {fileID: 3835429432935252220}
   - component: {fileID: 385353160}
   m_Layer: 0
@@ -181,19 +165,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &1182558303075010872
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1182558303075010873}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3835429432935252220
 MonoBehaviour:
   m_ObjectHideFlags: 0
