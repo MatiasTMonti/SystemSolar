@@ -45,7 +45,7 @@ public class Camera : MonoBehaviour
     [SerializeField] private TextMeshPro saturnText;
     [SerializeField] private TextMeshPro uranusText;
     [SerializeField] private TextMeshPro neptuneText;
-    [SerializeField] private TextMeshPro galaxyText;
+    [SerializeField] private TextMeshProUGUI galaxyText;
 
     // Update is called once per frame
     void Update()
