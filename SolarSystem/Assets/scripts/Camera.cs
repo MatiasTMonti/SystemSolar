@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class Camera : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class Camera : MonoBehaviour
     [SerializeField] private GameObject UranusCamera;
     [SerializeField] private GameObject NeptuneCamera;
 
-    [SerializeField] private GameObject earthLight;
+    [SerializeField] private GameObject worldLight;
 
     [SerializeField] private Transform mercury;
     [SerializeField] private Transform venus;
@@ -34,6 +35,17 @@ public class Camera : MonoBehaviour
     [SerializeField] private Transform saturnCameraTransform;
     [SerializeField] private Transform uranusCameraTransform;
     [SerializeField] private Transform NeptuneCameraTransform;
+
+    [SerializeField] private TextMeshPro sunText;
+    [SerializeField] private TextMeshPro mercuryText;
+    [SerializeField] private TextMeshPro venusText;
+    [SerializeField] private TextMeshPro earthText;
+    [SerializeField] private TextMeshPro marsText;
+    [SerializeField] private TextMeshPro jupiterText;
+    [SerializeField] private TextMeshPro saturnText;
+    [SerializeField] private TextMeshPro uranusText;
+    [SerializeField] private TextMeshPro neptuneText;
+    [SerializeField] private TextMeshPro galaxyText;
 
     // Update is called once per frame
     void Update()
@@ -61,10 +73,19 @@ public class Camera : MonoBehaviour
         venusCameraTransform.position = venus.position + new Vector3(0, 0, -2);
         earthCameraTransform.position = earth.position + new Vector3(0, 0, -2);
         marsCameraTransform.position = mars.position + new Vector3(0, 0, -2);
-        jupiterCameraTransform.position = jupiter.position + new Vector3(0, 0, -2);
-        saturnCameraTransform.position = saturn.position + new Vector3(0, 0, -2);
-        uranusCameraTransform.position = uranus.position + new Vector3(0, 0, -2);
-        NeptuneCameraTransform.position = neptune.position + new Vector3(0, 0, -2);
+        jupiterCameraTransform.position = jupiter.position + new Vector3(0, 0, -4);
+        saturnCameraTransform.position = saturn.position + new Vector3(0, 0, -4);
+        uranusCameraTransform.position = uranus.position + new Vector3(0, 0, -3);
+        NeptuneCameraTransform.position = neptune.position + new Vector3(0, 0, -3);
+
+        mercuryText.transform.position = mercury.position + new Vector3(8, -2, 0);
+        venusText.transform.position = venus.position + new Vector3(7, -1.4f, 0);
+        earthText.transform.position = earth.position + new Vector3(-10.95f, -1.8f, 0);
+        marsText.transform.position = mars.position + new Vector3(-8.95f, -1.8f, 0);
+        jupiterText.transform.position = jupiter.position + new Vector3(-11, -2f, 0);
+        saturnText.transform.position = saturn.position + new Vector3(-10.3f, -2f, -2);
+        uranusText.transform.position = uranus.position + new Vector3(-9.75f, -1.8f, -1);
+        neptuneText.transform.position = neptune.position + new Vector3(-10.3f, -1.8f, -1);
 
         switch (num)
         {
@@ -80,7 +101,28 @@ public class Camera : MonoBehaviour
                 UranusCamera.SetActive(false);
                 NeptuneCamera.SetActive(false);
 
-                earthLight.SetActive(false);
+                sunText.gameObject.SetActive(false);
+                mercuryText.gameObject.SetActive(false);
+                venusText.gameObject.SetActive(false);
+                earthText.gameObject.SetActive(false);
+                marsText.gameObject.SetActive(false);
+                jupiterText.gameObject.SetActive(false);
+                saturnText.gameObject.SetActive(false);
+                uranusText.gameObject.SetActive(false);
+                neptuneText.gameObject.SetActive(false);
+
+                galaxyText.gameObject.SetActive(true);
+                sunText.gameObject.SetActive(false);
+                mercuryText.gameObject.SetActive(false);
+                venusText.gameObject.SetActive(false);
+                earthText.gameObject.SetActive(false);
+                marsText.gameObject.SetActive(false);
+                jupiterText.gameObject.SetActive(false);
+                saturnText.gameObject.SetActive(false);
+                uranusText.gameObject.SetActive(false);
+                neptuneText.gameObject.SetActive(false);
+
+                worldLight.SetActive(false);
                 break;
             case 1:
                 worldCamera.SetActive(false);
@@ -94,7 +136,18 @@ public class Camera : MonoBehaviour
                 UranusCamera.SetActive(false);
                 NeptuneCamera.SetActive(false);
 
-                earthLight.SetActive(false);
+                galaxyText.gameObject.SetActive(false);
+                sunText.gameObject.SetActive(true);
+                mercuryText.gameObject.SetActive(false);
+                venusText.gameObject.SetActive(false);
+                earthText.gameObject.SetActive(false);
+                marsText.gameObject.SetActive(false);
+                jupiterText.gameObject.SetActive(false);
+                saturnText.gameObject.SetActive(false);
+                uranusText.gameObject.SetActive(false);
+                neptuneText.gameObject.SetActive(false);
+
+                worldLight.SetActive(true);
                 break;
             case 2:
                 worldCamera.SetActive(false);
@@ -108,7 +161,18 @@ public class Camera : MonoBehaviour
                 UranusCamera.SetActive(false);
                 NeptuneCamera.SetActive(false);
 
-                earthLight.SetActive(false);
+                galaxyText.gameObject.SetActive(false);
+                sunText.gameObject.SetActive(false);
+                mercuryText.gameObject.SetActive(true);
+                venusText.gameObject.SetActive(false);
+                earthText.gameObject.SetActive(false);
+                marsText.gameObject.SetActive(false);
+                jupiterText.gameObject.SetActive(false);
+                saturnText.gameObject.SetActive(false);
+                uranusText.gameObject.SetActive(false);
+                neptuneText.gameObject.SetActive(false);
+
+                worldLight.SetActive(true);
                 break;
             case 3:
                 worldCamera.SetActive(false);
@@ -122,7 +186,18 @@ public class Camera : MonoBehaviour
                 UranusCamera.SetActive(false);
                 NeptuneCamera.SetActive(false);
 
-                earthLight.SetActive(false);
+                galaxyText.gameObject.SetActive(false);
+                sunText.gameObject.SetActive(false);
+                mercuryText.gameObject.SetActive(false);
+                venusText.gameObject.SetActive(true);
+                earthText.gameObject.SetActive(false);
+                marsText.gameObject.SetActive(false);
+                jupiterText.gameObject.SetActive(false);
+                saturnText.gameObject.SetActive(false);
+                uranusText.gameObject.SetActive(false);
+                neptuneText.gameObject.SetActive(false);
+
+                worldLight.SetActive(true);
                 break;
             case 4:
                 worldCamera.SetActive(false);
@@ -136,7 +211,18 @@ public class Camera : MonoBehaviour
                 UranusCamera.SetActive(false);
                 NeptuneCamera.SetActive(false);
 
-                earthLight.SetActive(true);
+                galaxyText.gameObject.SetActive(false);
+                sunText.gameObject.SetActive(false);
+                mercuryText.gameObject.SetActive(false);
+                venusText.gameObject.SetActive(false);
+                earthText.gameObject.SetActive(true);
+                marsText.gameObject.SetActive(false);
+                jupiterText.gameObject.SetActive(false);
+                saturnText.gameObject.SetActive(false);
+                uranusText.gameObject.SetActive(false);
+                neptuneText.gameObject.SetActive(false);
+
+                worldLight.SetActive(true);
                 break;
             case 5:
                 worldCamera.SetActive(false);
@@ -150,7 +236,18 @@ public class Camera : MonoBehaviour
                 UranusCamera.SetActive(false);
                 NeptuneCamera.SetActive(false);
 
-                earthLight.SetActive(false);
+                galaxyText.gameObject.SetActive(false);
+                sunText.gameObject.SetActive(false);
+                mercuryText.gameObject.SetActive(false);
+                venusText.gameObject.SetActive(false);
+                earthText.gameObject.SetActive(false);
+                marsText.gameObject.SetActive(true);
+                jupiterText.gameObject.SetActive(false);
+                saturnText.gameObject.SetActive(false);
+                uranusText.gameObject.SetActive(false);
+                neptuneText.gameObject.SetActive(false);
+
+                worldLight.SetActive(true);
                 break;
             case 6:
                 worldCamera.SetActive(false);
@@ -164,7 +261,18 @@ public class Camera : MonoBehaviour
                 UranusCamera.SetActive(false);
                 NeptuneCamera.SetActive(false);
 
-                earthLight.SetActive(false);
+                galaxyText.gameObject.SetActive(false);
+                sunText.gameObject.SetActive(false);
+                mercuryText.gameObject.SetActive(false);
+                venusText.gameObject.SetActive(false);
+                earthText.gameObject.SetActive(false);
+                marsText.gameObject.SetActive(false);
+                jupiterText.gameObject.SetActive(true);
+                saturnText.gameObject.SetActive(false);
+                uranusText.gameObject.SetActive(false);
+                neptuneText.gameObject.SetActive(false);
+
+                worldLight.SetActive(true);
                 break;
             case 7:
                 worldCamera.SetActive(false);
@@ -178,7 +286,18 @@ public class Camera : MonoBehaviour
                 UranusCamera.SetActive(false);
                 NeptuneCamera.SetActive(false);
 
-                earthLight.SetActive(false);
+                galaxyText.gameObject.SetActive(false);
+                sunText.gameObject.SetActive(false);
+                mercuryText.gameObject.SetActive(false);
+                venusText.gameObject.SetActive(false);
+                earthText.gameObject.SetActive(false);
+                marsText.gameObject.SetActive(false);
+                jupiterText.gameObject.SetActive(false);
+                saturnText.gameObject.SetActive(true);
+                uranusText.gameObject.SetActive(false);
+                neptuneText.gameObject.SetActive(false);
+
+                worldLight.SetActive(true);
                 break;
             case 8:
                 worldCamera.SetActive(false);
@@ -192,7 +311,18 @@ public class Camera : MonoBehaviour
                 UranusCamera.SetActive(true);
                 NeptuneCamera.SetActive(false);
 
-                earthLight.SetActive(false);
+                galaxyText.gameObject.SetActive(false);
+                sunText.gameObject.SetActive(false);
+                mercuryText.gameObject.SetActive(false);
+                venusText.gameObject.SetActive(false);
+                earthText.gameObject.SetActive(false);
+                marsText.gameObject.SetActive(false);
+                jupiterText.gameObject.SetActive(false);
+                saturnText.gameObject.SetActive(false);
+                uranusText.gameObject.SetActive(true);
+                neptuneText.gameObject.SetActive(false);
+
+                worldLight.SetActive(true);
                 break;
             case 9:
                 worldCamera.SetActive(false);
@@ -206,7 +336,18 @@ public class Camera : MonoBehaviour
                 UranusCamera.SetActive(false);
                 NeptuneCamera.SetActive(true);
 
-                earthLight.SetActive(false);
+                galaxyText.gameObject.SetActive(false);
+                sunText.gameObject.SetActive(false);
+                mercuryText.gameObject.SetActive(false);
+                venusText.gameObject.SetActive(false);
+                earthText.gameObject.SetActive(false);
+                marsText.gameObject.SetActive(false);
+                jupiterText.gameObject.SetActive(false);
+                saturnText.gameObject.SetActive(false);
+                uranusText.gameObject.SetActive(false);
+                neptuneText.gameObject.SetActive(true);
+
+                worldLight.SetActive(true);
                 break;
             default:
                 break;
